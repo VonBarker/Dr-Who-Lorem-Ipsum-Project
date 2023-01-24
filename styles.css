@@ -1,6 +1,23 @@
+html { 
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 body {
     margin: 0;
     padding: 0;
+    background-color: #0F1726;
+    color: #fef1f5;
+}
+
+a:link, a:visited {
+    color: #c788d8;
+}
+a:hover {
+    color: #dc77f9;
 }
 
 /* Style the Banner */
@@ -15,4 +32,28 @@ header {
 header section {
     padding: 1rem;
     color: whitesmoke;
+}
+
+/* Center */
+.centered-main {
+    width: 80rem;
+    margin: 0 auto;
+}
+
+/* Style floated boxes */
+.box-right {
+    box-sizing: content-box;
+    float: right;
+    width: 600px;
+    padding: 0.5em;
+    margin: 0 0 0 1em;
+}
+.box-right img {
+    width: 100%;
+}
+
+/* Style Footer */
+footer {
+    background-color: #1d293e;
+    padding: 0.1rem 0;
 }
